@@ -1,0 +1,168 @@
+@import "./partials/settings";
+
+.nav-bar {
+    width: 100%;
+    background-color: $navbar-background;
+    color: $street-grey;
+
+    &__wrap{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2rem 1.8rem;
+        
+        @include responsiveScreens(tabs_port) {
+            width: 100%;
+        }
+
+        @include responsiveScreens(phone) {
+            width: 100%;
+
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            font-size: 1.7rem;
+            padding: 1.3rem;
+            cursor: pointer;
+
+            :hover{
+                color: $white;
+            }
+        }
+
+        h1{
+            font-size: 1.9rem;
+        }
+    }
+
+    &__auth{
+        font-weight: 800;
+
+    }
+
+    &--state {
+        @include responsiveScreens(phone) {
+            display: none;
+        }
+    }
+    
+
+}
+
+.menu-logo {
+    display: none;
+    
+    @include responsiveScreens(phone) {
+        display: block;
+    }
+
+    img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.mobile-nav {
+    font-size: 1.9rem;
+    text-align: center;
+    display: none;
+    transition: 0.5s;
+    
+    li {
+        border: solid .5px $white;
+        padding: .9rem;
+        list-style: none;
+        cursor: pointer;
+            
+    }
+    a:hover {
+        color: $white;
+    }
+}
+
+#logout {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+#logout-mobile {
+    display: none;
+}
+
+
+
+.container{
+    width: 70%;
+    margin: 10rem auto;
+    
+}
+
+.login-section{
+    display: flex;
+    justify-content: center;
+    animation-timing-function: ease-in;
+    h2 {
+        font-size: 2.0rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+
+        input {
+            padding: 1rem;
+            margin: .3rem;
+            width: 35rem;
+        }
+
+        input[type='submit'] {
+            border: transparent;
+            background-color: $street-grey;
+            color: $white;
+        }
+    }
+}
+
+.dashboard-section {
+    display: none;
+    animation-timing-function: ease-in;
+
+    h2 {
+        font-size: 2.1rem;
+        text-align: center;
+        padding: 5rem;
+    }
+
+    .course-row {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.1rem;
+
+        @include responsiveScreens(phone) {
+            flex-direction: column;
+
+        }
+    }
+    
+    .course-cols {
+        padding: 10rem;
+        background-color: $street-grey;
+        color: $white;
+        margin: 2rem;
+
+        @include responsiveScreens(tabs_port) {
+            padding: 8rem;
+        }
+        @include responsiveScreens(phone) {
+            padding: 8rem;
+            margin-bottom: 5rem;
+
+        }
+    }
+}

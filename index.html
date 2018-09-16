@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>Street Capital Education</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar__wrap">
+                <h1>Street Capital Education</h1>
+                <ul>
+                    <div class="nav-bar--state">
+                        <li>
+                            <a href="#">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav-bar__auth" id="login">
+                            <a href="#" onclick="login()">Login</a>
+                        </li>
+                        <li class="nav-bar__auth" id="register">
+                            <a href="#" onclick="login()">Register</a>
+                        </li>
+                        <li class="nav-bar__auth" id="logout">
+                            <a href="#" onclick="logout()">Logout</a>
+                        </li>
+
+                    </div>
+
+                    <div class="menu-logo" id="show-menu">
+                        <li>
+                            <a href="#" onclick="closeMenu()" id="close">
+                                <img src="img/cancel.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showMenu()" id="hamberger">
+                                <svg width="30" height="30">
+                                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                                    <path d="M0,23 30, 23" stroke="#fff" stroke-width="5" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </div>
+                </ul>
+
+
+            </div>
+
+            <div class="mobile-nav" id="show-nav">
+                <ul>
+                    <li>
+                        <a href="#">Courses</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <a href="#" onclick="login()">
+                        <li id="login-mobile">
+                            Login
+                        </li>
+                    </a>
+
+                    <a href="#" onclick="login()">
+                        <li id="register-mobile">
+                            Register
+                        </li>
+                    </a>
+
+                    <a href="#" onclick="logout()">
+                        <li id="logout-mobile">
+                            Logout
+                        </li>
+                    </a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="login-section" id="login-form">
+            <div>
+
+                <form>
+                    <h2>Login</h2>
+                    <input type='text' placeholder="username" />
+                    <input type='password' placeholder="password" />
+                    <input type='submit' value="login" onclick="login()" />
+                </form>
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="dashboard">
+            <header>
+                <h2>
+                    Welcome to Street Capital Education
+                </h2>
+            </header>
+
+            <div class="course-row">
+                <div class="course-cols">
+                    Maths
+                </div>
+                <div class="course-cols">
+                    Maths
+                </div>
+                <div class="course-cols">
+                    Maths
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="action.js"></script>
+</body>
+
+</html>

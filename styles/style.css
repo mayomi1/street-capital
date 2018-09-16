@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
+/**
+  Responsive screens
+  phone
+  tabs-port
+  tabs-land
+  big-desktop
+ */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: phone) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: Roboto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #494949;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: #83EDD9;
+  color: #494949;
+}
+
+.nav-bar__wrap {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 2rem 1.8rem;
+}
+
+@media (max-width: 920px) {
+  .nav-bar__wrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: tabs_port) {
+  .nav-bar__wrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 50em) {
+  .nav-bar__wrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: phone) {
+  .nav-bar__wrap {
+    width: 100%;
+  }
+}
+
+.nav-bar__wrap li {
+  list-style: none;
+  display: inline;
+  font-size: 1.7rem;
+  padding: 1.3rem;
+  cursor: pointer;
+}
+
+.nav-bar__wrap li :hover {
+  color: #FFFFFF;
+}
+
+.nav-bar__wrap h1 {
+  font-size: 1.9rem;
+}
+
+.nav-bar__auth {
+  font-weight: 800;
+}
+
+@media (max-width: 50em) {
+  .nav-bar--state {
+    display: none;
+  }
+}
+
+@media (max-width: phone) {
+  .nav-bar--state {
+    display: none;
+  }
+}
+
+.menu-logo {
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .menu-logo {
+    display: block;
+  }
+}
+
+@media (max-width: phone) {
+  .menu-logo {
+    display: block;
+  }
+}
+
+.menu-logo img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.mobile-nav {
+  font-size: 1.9rem;
+  text-align: center;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mobile-nav li {
+  border: solid 0.5px #FFFFFF;
+  padding: .9rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.mobile-nav a:hover {
+  color: #FFFFFF;
+}
+
+#logout {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+#logout-mobile {
+  display: none;
+}
+
+.container {
+  width: 70%;
+  margin: 10rem auto;
+}
+
+.login-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.login-section h2 {
+  font-size: 2.0rem;
+}
+
+.login-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.login-section form input {
+  padding: 1rem;
+  margin: .3rem;
+  width: 35rem;
+}
+
+.login-section form input[type='submit'] {
+  border: transparent;
+  background-color: #494949;
+  color: #FFFFFF;
+}
+
+.dashboard-section {
+  display: none;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.dashboard-section h2 {
+  font-size: 2.1rem;
+  text-align: center;
+  padding: 5rem;
+}
+
+.dashboard-section .course-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2.1rem;
+}
+
+@media (max-width: 50em) {
+  .dashboard-section .course-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: phone) {
+  .dashboard-section .course-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.dashboard-section .course-cols {
+  padding: 10rem;
+  background-color: #494949;
+  color: #FFFFFF;
+  margin: 2rem;
+}
+
+@media (max-width: 920px) {
+  .dashboard-section .course-cols {
+    padding: 8rem;
+  }
+}
+
+@media (max-width: tabs_port) {
+  .dashboard-section .course-cols {
+    padding: 8rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .dashboard-section .course-cols {
+    padding: 8rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: phone) {
+  .dashboard-section .course-cols {
+    padding: 8rem;
+    margin-bottom: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
